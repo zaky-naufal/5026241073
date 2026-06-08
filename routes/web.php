@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\PegawaiDBController ;
+use App\Http\Controllers\KeranjangDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -59,4 +60,8 @@ Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 Route::get('/pegawai/{nama}', [PegawaiDBController::class, 'index']);
 
+Route::get('/keranjangbelanja', [KeranjangDBController::class, 'indexKeranjang']);
+Route::get('/keranjangBeli/{id}', [KeranjangDBController::class, 'beli']);
+Route::post('/keranjangstore', [KeranjangDBController::class, 'storeKeranjang']);
+Route::get('/keranjangbatal/{id}', [KeranjangDBController::class, 'batal']);
 

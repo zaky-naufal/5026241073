@@ -32,6 +32,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">PR 3</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/keranjangbelanja">Pertemuan 15</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">EAS</a>
       </li>
