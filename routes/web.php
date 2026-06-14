@@ -43,12 +43,10 @@ Route::get('pertemuan3', function () {
 
 Route::get('pertemuan2', function () {
 	return view('meeting2');
-
 });
 
 Route::get('pertemuan1', function () {
 	return view('meeting1');
-
 });
 
 
