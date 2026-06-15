@@ -15,7 +15,7 @@
             <form action="/pegawai/update" method="post">
                 {{ csrf_field() }}
 
-                <input type="hidden" name="id" value="{{ $p->pegawai_id }}">
+                <input type="hidden" name="id" value="{{ $p->kodepegawai }}">
 
                 <div class="row mb-3">
                     <label for="nama" class="col-sm-2 col-form-label">Nama</label>

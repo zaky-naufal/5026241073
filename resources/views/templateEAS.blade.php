@@ -11,7 +11,7 @@
 
 <div class="container">
 <div class="mt-4 p-5 bg-primary text-white rounded">
-  <h1>5026241073 Muhammad Zaky Naufal Basuki</h1>
+  <h1>Kode Soal mykaryawan</h1>
   <h6>@yield('title') </h6>
 </div>
 

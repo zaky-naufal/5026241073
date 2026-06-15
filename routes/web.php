@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiDBController ;
 use App\Http\Controllers\KeranjangDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\nilaiDBController;
+use App\Http\Controllers\easDBController;
 
 
 Route::get('/', function () {
@@ -77,3 +78,6 @@ Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.e
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
 
+Route::get('/eas', [easDBController::class, 'indexEAS']);
+Route::get('/viewEAS/{id}', [easDBController::class, 'viewEAS']);
+Route::post('/storeNilai', [easDBController::class, 'store']);
