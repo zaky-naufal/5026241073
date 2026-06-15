@@ -13,7 +13,7 @@
 		</tr>
 		@foreach($karyawan as $k)
 		<tr>
-			<td>{{ $k->$namalengkap }}</td>
+			<td>{{ $k->kodepegawai }}</td>
 			<td>{{ $k->namalengkap }}</td>
 			<td>{{ $k->divisi }}</td>
 			<td>{{ $k->departemen }}</td>
